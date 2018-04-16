@@ -1,4 +1,5 @@
 vendor
 index.php
 .idea
+.DS_Store
 
