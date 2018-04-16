@@ -15,6 +15,10 @@ class USPSPackageTracker
     private $userAgent;
     private $domXPath;
 
+    /**
+     * USPSPackageTracker constructor.
+     * @param $trackingNumber
+     */
     public function __construct($trackingNumber)
     {
         $this->endpoint = '?tLabels=' . $trackingNumber;
@@ -63,6 +67,10 @@ class USPSPackageTracker
         $xmlPageXPath = new \DOMXPath($xmlPageDom);
         return $xmlPageXPath;
     }
+
+    /**
+     * @return string
+     */
     private function getUserAgent()
     {
         return 'Mozilla/5.0 (Macintosh; Intel Mac OS X x.y; rv:10.0) Gecko/20100101 Firefox/10.0';
