@@ -1,5 +1,5 @@
 <?php
-use AzaelCodes\Utils\USPSPackageTracker;
+use AzaelCodes\Utils\Tracker;
 
-$tracker = new USPSPackageTracker('9400136895357348963746');
+$tracker = new Tracker('UC001855845US');
 echo $tracker->getStatus();

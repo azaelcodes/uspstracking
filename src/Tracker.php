@@ -1,7 +1,7 @@
 <?php
 namespace AzaelCodes\Utils;
 
-class USPSPackageTracker
+class Tracker
 {
     /**
      * @var string
